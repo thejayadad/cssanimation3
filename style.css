@@ -1,0 +1,47 @@
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: monospace;
+}
+
+h2{
+    width: 0%;
+    overflow: hidden;
+    border-right: .10em solid orangered;
+    white-space: nowrap;
+    color: black;
+    animation: typing 4.5s steps (60, end) forwards, blink .85s step-end infinite; 
+}
+
+span{
+    color: orange;
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    20% {
+        width: 20%;
+    }
+    40% {
+        width: 20%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
